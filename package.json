@@ -1,7 +1,7 @@
 {
   "name": "calculador_sueldo-cavallo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Calculador de sueldo (NZ)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

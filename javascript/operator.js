@@ -1,3 +1,20 @@
+/* DECLARACION DE FUNCIONES */
+
+/* funcion para calcular porcentaje de impuestos a descontar */
+function Porcentaje(a, b) {
+    return (a * b) / 100
+}
+
+/* funcion para calcular el sueldo neto */
+function Resta(a, b) {
+    let restar = a - b
+    restar = restar.toFixed(2)
+    return restar
+}
+
+
+/* ----------------Desarrollo del codigo------------------- */
+
 alert("Bienvenido a tu calculador de sueldo en NZ")
 
 let nombreIngresado = prompt("Ingresa tu nombre")
@@ -50,10 +67,9 @@ do {
     }
 } while (condicion) {
     /* calculando sueldo */
-    let impuestosCalc = (salarioBruto * impuestos) / 100
+    let impuestosCalc = Porcentaje(salarioBruto, impuestos)
     console.log(`Los impuestos que se deduciran seran: ${impuestosCalc}`)
-    let salarioNeto = salarioBruto - impuestosCalc
-    salarioNeto = salarioNeto.toFixed(2)
+    let salarioNeto = Resta(salarioBruto, impuestosCalc)
     console.log(`Tu salario neto es: ${salarioNeto}`)
 
     /* Dando a conocer la informacion */
